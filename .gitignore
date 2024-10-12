@@ -1,0 +1,9 @@
+#all zip files
+*.zip
+
+#all log files
+*.log
+
+#all pdf files
+*.pdf
+*.docx

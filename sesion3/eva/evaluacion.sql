@@ -1,0 +1,35 @@
+CREATE DATABASE Concesionario;
+CREATE TABLE Empresa(
+	RUT VARCHAR(10) PRIMARY KEY,
+	Nombre VARCHAR(120) NOT NULL,
+	Direccion VARCHAR(120),
+	Telefono VARCHAR(15) NOT NULL,
+	Correo VARCHAR(80),
+	Web VARCHAR(50)
+);
+
+CREATE TABLE Cliente(
+	RUT VARCHAR(10) PRIMARY KEY,
+	Nombre VARCHAR(120) NOT NULL,
+	Correo VARCHAR(80),
+	Direccion VARCHAR(120),
+	Celular VARCHAR(15) NOT NULL
+);
+
+CREATE TABLE Herramienta(
+	IDHerramienta SERIAL PRIMARY KEY,
+	Nombre VARCHAR(120) NOT NULL,
+	PrecioDia INTEGER DEFAULT 0
+);
+
+CREATE TABLE Arriendo(
+	Folio SERIAL PRIMARY KEY,
+	Fecha DATE DEFAULT CURRENT_DATE,
+	Dias SMALLINT,
+	ValorDia INTEGER,
+	Garantia VARCHAR(30),
+	Herramienta_IDHerramienta INTEGER,
+	Cliente_RUT VARCHAR(10),
+	FOREIGN KEY (Herramienta_IDHerramienta) REFERENCES Herramienta(IDHerramienta),
+	FOREIGN KEY (Cliente_RUT) REFERENCES Cliente(RUT)
+);

@@ -1,9 +1,10 @@
-#all zip files
+#all compress files
 *.zip
+*.tar
 
 #all log files
 *.log
 
-#all pdf files
+#all documents files
 *.pdf
 *.docx

@@ -8,3 +8,5 @@
 #all documents files
 *.pdf
 *.docx
+*.csv
+*.txt

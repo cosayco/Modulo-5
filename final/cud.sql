@@ -1,4 +1,3 @@
--- Active: 1728748608161@@127.0.0.1@5432@dvdrental
 --Se crea una ciudad y una direccion para asignar al nuevo cliente
 INSERT INTO city (city, country_id) VALUES ('Coquimbo', 22);
 INSERT INTO address (address, district, city_id, postal_code, phone) VALUES ('1918 Portugal','Coquimbo',601,1730000,955443322);

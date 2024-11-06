@@ -1,4 +1,3 @@
--- Active: 1729199844327@@127.0.0.1@5432@peliculas
 --1. Crear base de datos llamada: películas. 
 CREATE DATABASE peliculas;
 --2. Revisar  los  archivos  peliculas.csv  y  reparto.csv,  para  crear  las  tablas  correspondientes, determinando  la  relación  entre  ambas.  Los  nombres  de  los  atributos  en  la  tabla  películas serán: id, pelicula, estreno, director. Y los nombres de los atributos en la tabla reparto serán: id_pelicula, actor.

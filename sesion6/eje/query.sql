@@ -1,0 +1,4 @@
+--1. Listar todos los vehículos que no han sido vendidos. 
+--2. Listar  todas  las  ventas  de  enero  del  2020  con  las  columnas:  Folio,  FechaVenta, MontoVenta, NombreCliente, RutCliente, Patente, NombreMarca, y Modelo. 
+--3. Sumar las ventas por mes y marca del año 2020. 
+--4. Listar Rut y Nombre de las tablas cliente y empresa.
